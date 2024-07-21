@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'io.github.goooler.shadow' version '8.1.7'
+}
+
+group = 'me.jeffreyg1228.lcdadaptationtool'
+version = '0.0.1'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'ch.qos.logback:logback-core:1.5.6'
+    implementation 'ch.qos.logback:logback-classic:1.5.6'
+    implementation 'com.google.code.gson:gson:2.10'
+    implementation 'com.formdev:flatlaf:3.5'
+    implementation 'com.github.Dansoftowner:jSystemThemeDetector:3.6'
+    implementation 'org.joml:joml:1.10.7'
+}
+
+shadowJar {
+    archiveClassifier.set('')
+    manifest {
+        attributes 'Main-Class': 'me.jeffreyg1228.lcdadaptationtool.Main'
+        attributes 'Implementation-Version': '0.0.1'
+    }
+}
