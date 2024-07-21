@@ -27,3 +27,7 @@ shadowJar {
         attributes 'Implementation-Version': '0.0.1'
     }
 }
+
+tasks.withType(JavaCompile) {
+    options.encoding="UTF-8"
+}
