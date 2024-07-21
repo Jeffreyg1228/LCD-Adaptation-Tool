@@ -66,7 +66,7 @@ public class MainFrame extends JFrame {
         about = new AbstractAction("关于…") {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(MainFrame.this, "By Jeffreyg1228.\n按照 MIT License 授权。\n当前版本：" + Main.APP_VERSION, Main.APP_NAME, JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(MainFrame.this, "By Jeffreyg1228.\n按照 MIT License 授权。\nGithub: https://github.com/Jeffreyg1228/LCD-Adaptation-Tool\n当前版本：" + Main.APP_VERSION, Main.APP_NAME, JOptionPane.INFORMATION_MESSAGE);
             }
         };
         helpMenu.add(about);
